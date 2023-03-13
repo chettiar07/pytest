@@ -1,0 +1,14 @@
+to run all the tests in the folder - pytest
+
+to run the specific file - pytest <filename>
+to run with verbosity - pytest -v
+to print the output with verbosity : pytest -vs
+to run the specific test from the file : pytest <filename> -vsk <method_name>
+
+to mark the test: @pytest.mark.<nameofmarker>
+
+to run only the marked tests: pytest -m <nameofmarker>
+
+to skip a test : @pytest.mark.skip
+
+to mark a test to be expected failure : @pytest.mark.xfail
