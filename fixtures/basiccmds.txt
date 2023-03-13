@@ -1,0 +1,20 @@
+to run all the tests in the folder - pytest
+
+to run the specific file - pytest <filename>
+to run with verbosity - pytest -v
+to print the output with verbosity : pytest -vs
+to run the specific test from the file : pytest <filename> -vsk <method_name>
+
+to mark the test: @pytest.mark.<nameofmarker>
+
+to run only the marked tests: pytest -m <nameofmarker>
+
+to skip a test : @pytest.mark.skip
+
+to mark a test to be expected failure : @pytest.mark.xfail
+
+to add setup and teardown functionality to a test case :
+ 1. create a method and decorate it with @pytest.fixture ( This will have the setup and teardown actions)
+ 2. The teardown actions start after the yield keyword in the method
+ 3. to use this fixture method for a test case, pass the fixture as an argument to the test case you want
+ 
